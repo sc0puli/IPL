@@ -1,4 +1,4 @@
-# lab3_part3_v1_<user>.tcl
+# lab3_part3_v1_tbazarov.tcl
 # Процедура: check_setup_time
 # Описание: проверяет выполнение setup-условия для заданного пути.
 # Входные аргументы (в порядке):
@@ -15,7 +15,7 @@ proc check_setup_time {clock_period data_path_delay setup_time margin_factor} {
     # Проверка количества аргументов (Tcl сам передаёт их по объявлению, но защитимся)
     set errMsg ""
     foreach {name val} {clock_period $clock_period data_path_delay $data_path_delay setup_time $setup_time margin_factor $margin_factor} {
-        # проверим, что значение — число (попробуем привести к double)
+        # проверим, что значение - число (попробуем привести к double)
         if {[catch {expr {double($val)}} _]} {
             append errMsg "Аргумент \"$name\" должен быть числом (получено: $val)\n"
         }
@@ -34,7 +34,7 @@ proc check_setup_time {clock_period data_path_delay setup_time margin_factor} {
     # Вычисление T_max с учётом запаса
     set T_max [expr {$cp - $st - $cp * $mf}]
 
-    # Slack = T_max - фактическая задержка (положительное — запас, отрицательное — дефицит)
+    # Slack = T_max - фактическая задержка (положительное - запас, отрицательное - дефицит)
     set slack [expr {$T_max - $dp}]
 
     # Вывод подробного отчёта
