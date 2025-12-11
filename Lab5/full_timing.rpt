@@ -1,0 +1,13 @@
+# Timing Report Generated 2024-05-15
+Path Group: CLOCK_A
+--------------------------------------------------
+Path 1 Slack: 0.15 ns (MET Setup) Endpoint: U_CORE/REG_A/Q
+Path 2 Slack: 0.15 ns (MET Setup) Endpoint: U_CORE/REG_B/Q
+Path 3 Slack: -0.55 ns (VIOLATED Hold) Endpoint: U_IO/RST_SYNC/D
+Path 4 Slack: -0.35 ns (VIOLATED Setup) Endpoint: U_CORE/REG_C/Q
+Path 5 Slack: -0.12 ns (VIOLATED Hold) Endpoint: U_IO/DATA_IN_REG/D
+Path 6 Slack: -0.99 ns (VIOLATED Setup) Endpoint: U_CORE/REG_D/Q
+Path 7 Slack: -0.38 ns (VIOLATED Setup) Endpoint: U_CORE/REG_E/Q
+Path 8 Slack: -0.31 ns (VIOLATED Setup) Endpoint: U_CORE/REG_F/Q
+Path 9 Slack: 0.22 ns (MET Hold) Endpoint: U_MEM/MEM_WRITE/D
+Path 10 Slack: -0.08 ns (VIOLATED Hold) Endpoint: U_IO/ADDR_SYNC/D
